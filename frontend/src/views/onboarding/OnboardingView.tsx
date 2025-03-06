@@ -24,10 +24,7 @@ import CreateAPIKey from "../developer/CreateAPIKey";
 import { DevContext } from "../developer/DevContext";
 import { CodeDisplay } from "@/components/general/CodeDisplay";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBuilding,
-  faExternalLinkAlt,
-} from "@fortawesome/pro-duotone-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { useAxiosInstance } from "@/services/useAxiosInstance";
 import { OrgService } from "@/services/OrgService";
 import { CopyPublishableKey } from "../developer/DevView";
@@ -185,7 +182,7 @@ function OnboardingView({
                 isLoading={loading}
                 variant="gradientPrimary"
                 startIcon={
-                  <FontAwesomeIcon icon={faBuilding} className="mr-2" />
+                  <FontAwesomeIcon icon={faStripe} className="mr-2" />
                 }
               >
                 Create Organization
@@ -222,7 +219,7 @@ function OnboardingView({
                       Stripe Test Key
                       <FontAwesomeIcon
                         className="ml-1 h-2.5 w-2.5"
-                        icon={faExternalLinkAlt}
+                        icon={faStripe}
                       />
                     </a>{" "}
                   </span>
@@ -455,7 +452,7 @@ window.location.href = checkoutUrl;
                     Documentation
                     <FontAwesomeIcon
                       className="ml-1 h-2.5 w-2.5"
-                      icon={faExternalLinkAlt}
+                      icon={faStripe}
                     />
                   </a>{" "}
                   to learn more about what you can do with Autumn.

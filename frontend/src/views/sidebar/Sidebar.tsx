@@ -9,13 +9,7 @@ import {
 import React from "react";
 import { TabButton } from "./TabButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBadgeDollar,
-  faCode,
-  faFileLines,
-  faToggleOff,
-  faUsers,
-} from "@fortawesome/pro-duotone-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 
 import { Organization } from "@clerk/nextjs/server";
 import { SidebarTop } from "./SidebarTop";
@@ -50,31 +44,31 @@ function HomeSidebar({
 
               <TabButton
                 value="features"
-                icon={<FontAwesomeIcon icon={faToggleOff} />}
+                icon={<FontAwesomeIcon icon={faStripe} />}
                 title="Features"
                 env={env}
               />
               {/* <TabButton
                 value="credits"
-                icon={<FontAwesomeIcon icon={faBadgeDollar} />}
+                icon={<FontAwesomeIcon icon={faStripe} />}
                 title="Credits"
                 env={env}
               /> */}
               <TabButton
                 value="products"
-                icon={<FontAwesomeIcon icon={faFileLines} />}
+                icon={<FontAwesomeIcon icon={faStripe} />}
                 title="Products"
                 env={env}
               />
               <TabButton
                 value="customers"
-                icon={<FontAwesomeIcon icon={faUsers} />}
+                icon={<FontAwesomeIcon icon={faStripe} />}
                 title="Customers"
                 env={env}
               />
               <TabButton
                 value="dev"
-                icon={<FontAwesomeIcon icon={faCode} />}
+                icon={<FontAwesomeIcon icon={faStripe} />}
                 title="Developer"
                 env={env}
               />

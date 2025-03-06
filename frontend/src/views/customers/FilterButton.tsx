@@ -10,11 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import {
-  faBarsFilter,
-  faCheck,
-  faXmark,
-} from "@fortawesome/pro-solid-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useCustomersContext } from "./CustomersContext";
 import { keyToTitle } from "@/utils/formatUtils/formatTextUtils";
@@ -42,7 +38,7 @@ function FilterButton() {
             onClick={() => setFilters({})}
             className="cursor-pointer"
           >
-            <FontAwesomeIcon icon={faXmark} className="mr-2 text-t3" />
+            <FontAwesomeIcon icon={faStripe} className="mr-2 text-t3" />
             Clear
           </DropdownMenuItem>
         </DropdownMenuGroup>
@@ -78,7 +74,7 @@ export const FilterStatus = () => {
           >
             {keyToTitle(status)}
             {isActive && (
-              <FontAwesomeIcon size="sm" icon={faCheck} className="text-t3" />
+              <FontAwesomeIcon size="sm" icon={faStripe} className="text-t3" />
             )}
           </DropdownMenuItem>
         );
@@ -110,7 +106,7 @@ export const ProductStatus = () => {
           >
             {product.name}
             {isActive && (
-              <FontAwesomeIcon size="sm" icon={faCheck} className="text-t3" />
+              <FontAwesomeIcon size="sm" icon={faStripe} className="text-t3" />
             )}
           </DropdownMenuItem>
         );
@@ -123,7 +119,7 @@ export const RenderFilterTrigger = ({ setOpen }: any) => {
   return (
     <DropdownMenuTrigger asChild>
       <Button variant="outline" className="text-t3">
-        <FontAwesomeIcon icon={faBarsFilter} className="mr-2 text-t3" />
+        <FontAwesomeIcon icon={faStripe} className="mr-2 text-t3" />
         Filter
       </Button>
     </DropdownMenuTrigger>

@@ -1,5 +1,5 @@
 import SmallSpinner from "@/components/general/SmallSpinner";
-import { faEllipsisVertical, faTrash } from "@fortawesome/pro-solid-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { cn } from "@nextui-org/theme";
 import {
@@ -16,7 +16,7 @@ import { Customer } from "@autumn/shared";
 import { useCustomerContext } from "./CustomerContext";
 import { CusService } from "@/services/customers/CusService";
 import { useRouter } from "next/navigation";
-import { faCog } from "@fortawesome/pro-duotone-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { navigateTo } from "@/utils/genUtils";
 
 export const CustomerToolbar = ({
@@ -54,7 +54,7 @@ export const CustomerToolbar = ({
           dim={6}
           className={cn("rounded-full", className)}
         >
-          <FontAwesomeIcon icon={faCog} size="lg" />
+          <FontAwesomeIcon icon={faStripe} size="lg" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="text-t2">
@@ -71,7 +71,7 @@ export const CustomerToolbar = ({
             {deleteLoading ? (
               <SmallSpinner />
             ) : (
-              <FontAwesomeIcon icon={faTrash} size="sm" />
+              <FontAwesomeIcon icon={faStripe} size="sm" />
             )}
           </div>
         </DropdownMenuItem>

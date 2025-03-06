@@ -27,10 +27,7 @@ import {
 } from "@/components/ui/table";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowUpRightFromSquare,
-  faSquareUpRight,
-} from "@fortawesome/pro-duotone-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { CustomerProductList } from "./CustomerProductList";
 import { formatUnixToDateTime } from "@/utils/formatUtils/formatDateUtils";
 import { ManageEntitlements } from "./entitlements/ManageEntitlements";
@@ -39,7 +36,7 @@ import { navigateTo } from "@/utils/genUtils";
 import { CustomerEventsList } from "./product/CustomerEventsList";
 import { useState } from "react";
 import Link from "next/link";
-import { faStripe, faStripeS } from "@fortawesome/free-brands-svg-icons";
+import { faStripe, faStripe } from "@fortawesome/free-brands-svg-icons";
 import { getStripeCusLink } from "@/utils/linkUtils";
 
 export default function CustomerView({
@@ -204,7 +201,7 @@ export default function CustomerView({
                         className="flex items-center gap-2 text-lime-500"
                       >
                         View Invoice
-                        <FontAwesomeIcon icon={faSquareUpRight} />
+                        <FontAwesomeIcon icon={faStripe} />
                       </a>
                     </TableCell> */}
                     <TableCell>
@@ -282,7 +279,7 @@ export default function CustomerView({
                     className="text-[#675DFF] h-6"
                   />
                   <FontAwesomeIcon
-                    icon={faArrowUpRightFromSquare}
+                    icon={faStripe}
                     className="text-[#675DFF]"
                     size="xs"
                   />

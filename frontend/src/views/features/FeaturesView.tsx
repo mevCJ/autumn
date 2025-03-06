@@ -13,7 +13,7 @@ import { CustomToaster } from "@/components/general/CustomToaster";
 import { Button } from "@/components/ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faDollarCircle } from "@fortawesome/pro-duotone-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { cn } from "@/lib/utils";
 import { CreditSystemsTable } from "../credits/CreditSystemsTable";
 import CreateCreditSystem from "../credits/CreateCreditSystem";
@@ -93,7 +93,7 @@ function FeaturesView({ env }: { env: AppEnv }) {
               setShowCredits(creditSystems.length > 0 ? true : !showCredits)
             }
           >
-            <FontAwesomeIcon icon={faDollarCircle} className="mr-2" />
+            <FontAwesomeIcon icon={faStripe} className="mr-2" />
             Credit Systems
           </Button>
         </div>

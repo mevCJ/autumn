@@ -36,7 +36,7 @@ import { useAxiosSWR } from "@/services/useAxiosSwr";
 import LoadingScreen from "../general/LoadingScreen";
 import SmallSpinner from "@/components/general/SmallSpinner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCcStripe, faStripeS } from "@fortawesome/free-brands-svg-icons";
+import { faStripe, faStripe } from "@fortawesome/free-brands-svg-icons";
 
 function ConnectStripe({
   className,
@@ -187,7 +187,7 @@ function ConnectStripe({
             onClick={handleConnectStripe}
             disabled={org?.stripe_connected}
             isLoading={isLoading}
-            startIcon={<FontAwesomeIcon icon={faStripeS} className="mr-2" />}
+            startIcon={<FontAwesomeIcon icon={faStripe} className="mr-2" />}
           >
             Connect Stripe
           </Button>

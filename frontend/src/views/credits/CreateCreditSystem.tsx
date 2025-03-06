@@ -206,7 +206,7 @@ function CreateCreditSystem() {
                       dim={6}
                       className="text-t3"
                     >
-                      <FontAwesomeIcon icon={faXmark} />
+                      <FontAwesomeIcon icon={faStripe} />
                     </Button>
                   </div>
                 </React.Fragment>

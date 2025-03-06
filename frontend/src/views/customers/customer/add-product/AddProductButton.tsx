@@ -6,10 +6,7 @@ import {
 } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFileInvoiceDollar,
-  faUpload,
-} from "@fortawesome/pro-duotone-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 
 import {
@@ -18,7 +15,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { faCartShopping } from "@fortawesome/pro-duotone-svg-icons/faCartShopping";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { ProductActionState } from "../product/CustomerProductView";
 
 export const AddProductButton = ({
@@ -74,7 +71,7 @@ export const AddProductButton = ({
         className="w-fit gap-2"
         isLoading={loading}
         disabled={actionState.disabled}
-        startIcon={<FontAwesomeIcon icon={faUpload} />}
+        startIcon={<FontAwesomeIcon icon={faStripe} />}
       >
         {actionState.buttonText}
       </Button>
@@ -91,7 +88,7 @@ export const AddProductButton = ({
                 onClick={() => setOpen(true)}
                 variant="gradientPrimary"
                 className="w-fit gap-2"
-                startIcon={<FontAwesomeIcon icon={faUpload} />}
+                startIcon={<FontAwesomeIcon icon={faStripe} />}
                 disabled={actionState.disabled}
               >
                 {actionState.buttonText}
@@ -109,7 +106,7 @@ export const AddProductButton = ({
         >
           <div className="flex items-center gap-2">
             <FontAwesomeIcon
-              icon={faCartShopping}
+              icon={faStripe}
               size="xs"
               className="!h-3 w-3"
             />
@@ -123,7 +120,7 @@ export const AddProductButton = ({
         >
           <div className="flex items-center gap-2">
             <FontAwesomeIcon
-              icon={faFileInvoiceDollar}
+              icon={faStripe}
               size="xs"
               className="!h-3 w-3"
             />
@@ -141,7 +138,7 @@ export const AddProductButton = ({
               onClick={handleClick}
               variant="gradientPrimary"
               className="w-fit gap-2"
-              startIcon={<FontAwesomeIcon icon={faUpload} />}
+              startIcon={<FontAwesomeIcon icon={faStripe} />}
               isLoading={createLoading}
               disabled={actionState.disabled}
             >

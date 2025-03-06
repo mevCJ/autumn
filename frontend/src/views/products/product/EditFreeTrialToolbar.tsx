@@ -1,9 +1,5 @@
 import SmallSpinner from "@/components/general/SmallSpinner";
-import {
-  faEdit,
-  faEllipsisVertical,
-  faTrash,
-} from "@fortawesome/pro-solid-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { cn } from "@nextui-org/theme";
 import {
@@ -17,7 +13,7 @@ import toast from "react-hot-toast";
 import { Button } from "@/components/ui/button";
 
 import { Product } from "@autumn/shared";
-import { faCog } from "@fortawesome/pro-duotone-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { ProductService } from "@/services/products/ProductService";
 import { useRouter } from "next/navigation";
 import { useAxiosInstance } from "@/services/useAxiosInstance";
@@ -50,7 +46,7 @@ export const EditFreeTrialToolbar = ({
           dim={6}
           className={cn("rounded-full", className)}
         >
-          <FontAwesomeIcon icon={faEllipsisVertical} />
+          <FontAwesomeIcon icon={faStripe} />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="text-t2">
@@ -67,7 +63,7 @@ export const EditFreeTrialToolbar = ({
             {deleteLoading ? (
               <SmallSpinner />
             ) : (
-              <FontAwesomeIcon icon={faTrash} size="sm" />
+              <FontAwesomeIcon icon={faStripe} size="sm" />
             )}
           </div>
         </DropdownMenuItem>

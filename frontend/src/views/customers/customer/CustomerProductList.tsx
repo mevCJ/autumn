@@ -24,15 +24,15 @@ import {
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEllipsisVertical } from "@fortawesome/pro-regular-svg-icons";
-import { faArrowUpRightFromSquare } from "@fortawesome/pro-duotone-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { keyToTitle } from "@/utils/formatUtils/formatTextUtils";
 import { CusService } from "@/services/customers/CusService";
 import { useAxiosInstance } from "@/services/useAxiosInstance";
 import SmallSpinner from "@/components/general/SmallSpinner";
 import { Badge } from "@/components/ui/badge";
 import toast from "react-hot-toast";
-import { faStripe, faStripeS } from "@fortawesome/free-brands-svg-icons";
+import { faStripe, faStripe } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { getStripeSubLink } from "@/utils/linkUtils";
 import React from "react";
@@ -128,7 +128,7 @@ export const CustomerProductList = ({
                               >
                                 <div className="flex justify-center items-center w-fit px-2 gap-2 h-6">
                                   <FontAwesomeIcon
-                                    icon={faArrowUpRightFromSquare}
+                                    icon={faStripe}
                                     className="text-[#665CFF]"
                                     size="xs"
                                   />
@@ -152,7 +152,7 @@ export const CustomerProductList = ({
                       >
                         <div className="flex justify-center items-center w-fit px-2 gap-2 h-6">
                           <FontAwesomeIcon
-                            icon={faArrowUpRightFromSquare}
+                            icon={faStripe}
                             className="text-[#665CFF]"
                             size="xs"
                           />
@@ -198,7 +198,7 @@ const EditCustomerProductToolbar = ({
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" dim={6} className="rounded-full w-4 h-4 p-0">
           <FontAwesomeIcon
-            icon={faEllipsisVertical}
+            icon={faStripe}
             size="sm"
             className="h-3"
           />

@@ -1,5 +1,5 @@
 import SmallSpinner from "@/components/general/SmallSpinner";
-import { faEllipsisVertical, faTrash } from "@fortawesome/pro-solid-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { cn } from "@nextui-org/theme";
 import {
@@ -51,7 +51,7 @@ export const FeatureRowToolbar = ({
           dim={6}
           className={cn("rounded-full", className)}
         >
-          <FontAwesomeIcon icon={faEllipsisVertical} size="sm" />
+          <FontAwesomeIcon icon={faStripe} size="sm" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="text-t2">
@@ -68,7 +68,7 @@ export const FeatureRowToolbar = ({
             {deleteLoading ? (
               <SmallSpinner />
             ) : (
-              <FontAwesomeIcon icon={faTrash} size="sm" />
+              <FontAwesomeIcon icon={faStripe} size="sm" />
             )}
           </div>
         </DropdownMenuItem>

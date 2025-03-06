@@ -1,7 +1,7 @@
 import FieldLabel from "@/components/general/modal-components/FieldLabel";
 import { slugify } from "@/utils/formatUtils/formatTextUtils";
 import { CreditSystem, Feature, FeatureType } from "@autumn/shared";
-import { faXmark } from "@fortawesome/pro-duotone-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -180,7 +180,7 @@ function CreditSystemConfig({
                         dim={6}
                         className="text-t3"
                       >
-                        <FontAwesomeIcon icon={faXmark} />
+                        <FontAwesomeIcon icon={faStripe} />
                       </Button>
                     </div>
                   </div>

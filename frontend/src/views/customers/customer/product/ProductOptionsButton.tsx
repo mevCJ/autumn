@@ -1,4 +1,4 @@
-import { faCircleDollar } from "@fortawesome/pro-solid-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -14,7 +14,7 @@ export const ProductOptionsButton = () => {
         <Button
           variant="gradientSecondary"
           className="w-fit gap-2"
-          startIcon={<FontAwesomeIcon icon={faCircleDollar} />}
+          startIcon={<FontAwesomeIcon icon={faStripe} />}
         >
           Configure Product Options
         </Button>

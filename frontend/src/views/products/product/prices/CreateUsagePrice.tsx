@@ -21,7 +21,7 @@ import React, { useEffect, useState } from "react";
 import { keyToTitleFirstCaps } from "@/utils/formatUtils/formatTextUtils";
 import { Button } from "@/components/ui/button";
 import { cn } from "@nextui-org/theme";
-import { faXmark } from "@fortawesome/pro-solid-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useProductContext } from "../ProductContext";
 import { getFeature } from "@/utils/product/entitlementUtils";
@@ -329,7 +329,7 @@ function CreateUsagePrice({
                 onClick={() => handleRemoveTier(index)}
                 dim={6}
               >
-                <FontAwesomeIcon icon={faXmark} />
+                <FontAwesomeIcon icon={faStripe} />
               </Button>
             )}
           </div>

@@ -11,11 +11,7 @@ import { UserButton, useUser } from "@clerk/nextjs";
 import { Avatar } from "@nextui-org/react";
 import { AppEnv } from "@autumn/shared";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBook,
-  faCircleNodes,
-  faWallet,
-} from "@fortawesome/pro-duotone-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 
 import { TabButton } from "./TabButton";
 import { cn } from "@/lib/utils";
@@ -38,19 +34,19 @@ export default function SidebarBottom({
       <SidebarMenu className={cn(expanded)}>
         <TabButton
           value="pricing"
-          icon={<FontAwesomeIcon icon={faWallet} />}
+          icon={<FontAwesomeIcon icon={faStripe} />}
           title="Pricing"
           env={env}
         />
         <TabButton
           value="integrations/stripe"
-          icon={<FontAwesomeIcon icon={faCircleNodes} />}
+          icon={<FontAwesomeIcon icon={faStripe} />}
           title="Connect to Stripe"
           env={env}
         />
         <TabButton
           value="docs"
-          icon={<FontAwesomeIcon icon={faBook} />}
+          icon={<FontAwesomeIcon icon={faStripe} />}
           title="Documentation"
           env={env}
           href="https://docs.useautumn.com"

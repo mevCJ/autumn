@@ -12,7 +12,7 @@ import { useAxiosInstance } from "@/services/useAxiosInstance";
 import { AddProductContext } from "./CreateCheckoutContext";
 import { Input } from "@/components/ui/input";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/pro-solid-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { useRouter } from "next/navigation";
 import { getRedirectUrl, navigateTo } from "@/utils/genUtils";
 import toast from "react-hot-toast";
@@ -72,7 +72,7 @@ function AddProduct() {
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-[var(--radix-dropdown-menu-trigger-width)] p-0">
             <div className="flex items-center border-b px-2">
-              <FontAwesomeIcon icon={faSearch} className="h-3 w-3 text-t3" />
+              <FontAwesomeIcon icon={faStripe} className="h-3 w-3 text-t3" />
               <Input
                 type="search"
                 placeholder="Search products"

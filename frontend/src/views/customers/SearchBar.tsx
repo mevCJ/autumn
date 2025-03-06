@@ -1,5 +1,5 @@
 import SmallSpinner from "@/components/general/SmallSpinner";
-import { faMagnifyingGlass } from "@fortawesome/pro-solid-svg-icons";
+import { faStripe } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { debounce } from "lodash";
 import { useMemo, useRef, useState } from "react";
@@ -43,7 +43,7 @@ export function SearchBar({
     flex items-center w-full bg-white"
     >
       <FontAwesomeIcon
-        icon={faMagnifyingGlass}
+        icon={faStripe}
         className="text-t3 mr-2"
         size="sm"
       />
